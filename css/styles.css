@@ -11,6 +11,7 @@
   --bg-accent-color: #2196f3;
   --bg-accent-color-button: #188ce8;
   --border-card-color: #eeeeee;
+  --soc-icon-color-main: #afb1b8;
 }
 /* reset style */
 p,
@@ -134,6 +135,18 @@ body {
 }
 /* section */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -150,6 +163,19 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--bg-light-color);
+  margin-bottom: 30px;
+}
+.icon-features {
+  width: 70px;
+  height: 70px;
 }
 .item-features {
   flex-basis: calc((100%-90px) / 4);
@@ -188,6 +214,33 @@ body {
 }
 .list-activity .item-image:not(:last-child) {
   margin-right: 30px;
+}
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--soc-icon-color-main);
+  margin-bottom: 30px;
+}
+.button-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.button-icon:hover,
+.button-icon:focus {
+  fill: var(--bg-main-color);
+  background-color: var(--accent-color);
+}
+.soc-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.soc-icon {
+  width: 20px;
+  height: 20px;
 }
 .item-team {
   flex-basis: calc((100%-90px) / 4);
@@ -257,6 +310,20 @@ body {
   max-width: 100%;
   height: auto;
 }
+/* cliemts */
+.title-clients {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.list-clients {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.list-clients
 /* button */
 .button-studio {
   display: block;
@@ -269,6 +336,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   border-radius: 4px;
+  border-color: var(--accent-color);
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.06em;
@@ -279,7 +347,7 @@ body {
 .button-studio:hover,
 .button-studio:focus {
   background-color: var(--bg-accent-color-button);
-  color: var(--white-color);
+  border-color: var(--accent-color);
 }
 .button-portfolio {
   padding: 6px 22px;
