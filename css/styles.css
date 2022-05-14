@@ -216,7 +216,7 @@ body {
 }
 .title-features {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -258,6 +258,9 @@ body {
 .soc-icon {
   width: 20px;
   height: 20px;
+}
+.soc-item:not(:last-child) {
+  margin-right: 10px;
 }
 .item-team {
   flex-basis: calc((100%-90px) / 4);
@@ -363,6 +366,9 @@ body {
 .link-clients:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+.logo-company {
+  background-size: contain;
 }
 
 /* button */
@@ -480,6 +486,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .address-link-first {
   font-style: normal;
@@ -524,7 +531,8 @@ body {
   fill: var(--bg-main-color);
   background-color: var(--soc-bg-footer);
 }
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   fill: var(--bg-main-color);
   background-color: var(--bg-accent-color);
 }
